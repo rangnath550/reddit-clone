@@ -79,6 +79,7 @@ pipeline {
                  }
              }
          }
+    }
 
 	post {
         always {
@@ -91,7 +92,6 @@ pipeline {
                attachmentsPattern: 'trivyfs.txt,trivyimage.txt'
         }
      }
-    }
 }
 /*	 stage("Build & Push Docker Image") {
              steps {
